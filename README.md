@@ -1,4 +1,5 @@
 # React Web App with Flask Backend for PyTorch Model
+
 ### FullStack AI Series- Part 2 (CellStrat AI Lab)
 
 This repository contains the code for React Web App with Flask Backend for PyTorch Model Session and is a part of the Full stack AI Love Coding Series at CellStrat AI Lab.
@@ -8,8 +9,9 @@ In this part, the BERT model that was trained in part 1 is wrapped around a Reac
 #### Usage
 
 1. Clone the repository
+
 ```bash
-git clone https://github.com/theneuralbeing/bert-finetuning-webinar.git
+git clone https://github.com/theneuralbeing/bert-web-app.git
 ```
 
 2. Download the trained sentiment analysis model from [here](https://gradient-fire.s3.amazonaws.com/inference.pth)
