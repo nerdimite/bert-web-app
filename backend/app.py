@@ -15,7 +15,7 @@ print('Initializing Predictor...')
 predictor = Predictor(model)
 
 @app.route('/pred', methods=['POST'])
-def test():
+def prediction():
 
     # POST request
     if request.method == 'POST':
