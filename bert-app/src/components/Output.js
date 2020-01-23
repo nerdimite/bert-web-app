@@ -24,7 +24,7 @@ class Output extends React.Component {
   render() {
     return (
       <div className="ui segment">
-        <i className={`${this.state.icon} icon`} />
+        <i className={`${this.state.icon} large icon`} />
         {this.state.output}
       </div>
     );
