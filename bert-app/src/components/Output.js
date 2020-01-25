@@ -3,10 +3,6 @@ import React from "react";
 class Output extends React.Component {
   state = { output: "Waiting", icon: "ellipsis horizontal" };
 
-  onInputChange = event => {
-    this.setState({ text: event.target.value });
-  };
-
   onGettingPred = res => {
     if (res === "1") {
       this.setState({ output: "Positive Review", icon: "check" });
