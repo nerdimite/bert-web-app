@@ -4,7 +4,7 @@ Before you attend the session "React Frontends for Data Scientists", there are a
 
 ### Downloads
 
-1. Download the trained sentiment analysis model trained in our last session from [here](https://gradient-fire.s3.amazonaws.com/inference.pth)
+1. Download the trained sentiment analysis model trained in our last session from [here](https://gradient-fire.s3.amazonaws.com/model.pth)
 2. Download the bert-base-uncased model from [here](https://gradient-fire.s3.amazonaws.com/bert-base-uncased.rar)
 3. Download the Inference Module for our model from [here](https://gradient-fire.s3.amazonaws.com/inference.py)
 4. Download and Install Node.js for your respective operating system from [here](https://nodejs.org/en/download/)
