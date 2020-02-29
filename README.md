@@ -6,6 +6,11 @@ This repository contains the code for React Web App with Flask Backend for PyTor
 
 In this part, the BERT model that was trained in part 1 is wrapped around a React Frontend and Flask Backend for inference.
 
+Checkout the code from the other parts here:
+
+- [Part 1](https://github.com/theneuralbeing/bert-finetuning-webinar)
+- [Part 3](https://github.com/theneuralbeing/bert-deployment-aws)
+
 #### Usage
 
 1. Clone the repository
