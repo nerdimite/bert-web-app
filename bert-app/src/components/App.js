@@ -9,7 +9,7 @@ class App extends React.Component {
   }
 
   onFormSubmit = async review => {
-    const response = await fetch("/pred", {
+    const response = await fetch("http://localhost:5000/pred", {
       headers: {
         "Content-Type": "application/json",
         "Access-Control-Allow-Origin": "*"

@@ -1,10 +1,12 @@
-from flask import Flask, jsonify, request, render_template
-import json
+from flask import Flask, request
+from flask_cors import CORS
 print('Initializing inference script...')
 from inference import SentimentClassifier, Predictor
 import torch
 
 app = Flask(__name__)
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 # loading the predictor
 print('Loading Model...')
@@ -27,4 +29,4 @@ def prediction():
 
 
 if __name__ == '__main__':
-   app.run()
+   app.run(port=5000)

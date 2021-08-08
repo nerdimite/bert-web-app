@@ -1,4 +1,4 @@
-from transformers import BertModel, BertTokenizer
+from transformers import BertModel, BertTokenizer, BertConfig
 import torch
 from torch import nn
 
@@ -8,7 +8,7 @@ class SentimentClassifier(nn.Module):
         super(SentimentClassifier, self).__init__()
 
         # Instantiating the BERT model object
-        self.bert_layer = BertModel.from_pretrained('./bert-base-uncased')
+        self.bert_layer = BertModel(BertConfig())
 
         # Defining layers like dropout and linear
         self.dropout = nn.Dropout(0.1)
@@ -21,11 +21,11 @@ class SentimentClassifier(nn.Module):
             -attn_masks : Tensor of shape [B, T] containing attention masks to be used to avoid contibution of PAD tokens
         '''
 
-        # Getting contextualized representations from BERT Layer
-        cont_reps, _ = self.bert_layer(seq, attention_mask = attn_masks)
+        # Getting hidden states from BERT Layer
+        hidden_states = self.bert_layer(seq, attention_mask = attn_masks).last_hidden_state
 
         # Obtaining the representation of [CLS] head
-        cls_rep = cont_reps[:, 0]
+        cls_rep = hidden_states[:, 0]
         # print('CLS shape: ',cls_rep.shape)
 
         # Feeding cls_rep to the classifier layer

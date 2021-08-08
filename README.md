@@ -18,15 +18,12 @@ Checkout the code from the other parts here:
 ```bash
 git clone https://github.com/theneuralbeing/bert-web-app.git
 ```
+2. Install the required python libraries by running `pip install -r requirements.txt`.
+3. Install `node.js` for running the react application.
 
-2. Download the trained sentiment analysis model from [here](https://gradient-fire.s3.amazonaws.com/inference.pth)
-3. Download the bert-base-uncased model from [here](https://gradient-fire.s3.amazonaws.com/bert-base-uncased.rar) and then unzip the archive
-4. Move both the downloaded files to [backend](backend) directory
-
-5. Create your react app as shown in the coding session. The react source code can be found in [bert-app](bert-app)
-
-Note: You cannot run the react application from this repository.
-
-6. Start your react app with `npm start` in the terminal.
-7. Open another terminal and `cd` to [backend](backend) directory and start the flask server using this command `python app.py`
-8. Now you can play around with your sentiment analysis web app.
+4. Download the trained sentiment analysis model [inference.pth](https://gradient-fire.s3.amazonaws.com/bert-webinar/inference.pth) file.
+5. Move the downloaded `pth` file to the [backend](backend) directory.
+6. Setup your react app by running `npm install` from the [bert-app](bert-app) directory.
+7. Start your react app with `npm start` in the terminal.
+8. Open another terminal and `cd` to [backend](backend) directory and start the flask server using this command `python app.py`.
+9. Now you can play around with your sentiment analysis web app.
